@@ -1,0 +1,313 @@
+/* =====================================================
+   THE LAST TREE — RESPONSIVE DESIGN
+   ===================================================== */
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+
+    /* HERO */
+
+    .hero-content {
+        left: 7vw;
+        right: 7vw;
+    }
+
+    .hero h1 {
+        font-size: clamp(65px, 14vw, 120px);
+    }
+
+
+    /* CITY */
+
+    .city-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+
+    /* TREE */
+
+    .tree-section {
+        flex-direction: column;
+    }
+
+    .tree-image {
+        width: 100%;
+        min-height: 55vh;
+    }
+
+    .tree-content {
+        width: 100%;
+        padding: 90px 8vw;
+    }
+
+
+    /* COST */
+
+    .cost-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cost-grid article,
+    .cost-grid article:not(:first-child) {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+
+        padding: 35px 0;
+    }
+
+    .cost-grid article:last-child {
+        border-bottom: 0;
+    }
+
+
+    /* COMPARISON */
+
+    .comparison-header {
+        display: block;
+    }
+
+    .comparison-header h2 {
+        margin-top: 50px;
+    }
+
+    .comparison {
+        height: 55vh;
+    }
+
+
+    /* IMPACT */
+
+    .impact-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-card {
+        border-right: 0;
+        border-bottom: 1px solid #aaa89f;
+    }
+
+    .impact-card:last-child {
+        border-bottom: 0;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline-header {
+        display: block;
+    }
+
+    .timeline-header h2 {
+        margin-top: 50px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 100px 1fr;
+        gap: 20px;
+
+        padding: 30px 0;
+    }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .timeline-item h3 {
+        grid-column: 2;
+    }
+
+    .timeline-item p {
+        grid-column: 2;
+    }
+
+
+    /* FOOTER */
+
+    .site-footer {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .site-footer p:nth-child(2),
+    .site-footer p:last-child {
+        text-align: left;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        height: 70px;
+        padding: 0 6vw;
+    }
+
+
+    /* HERO */
+
+    .hero-content {
+        left: 6vw;
+        right: 6vw;
+    }
+
+    .hero h1 {
+        font-size: clamp(55px, 17vw, 95px);
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .hero-side-text {
+        display: none;
+    }
+
+
+    /* COMMON */
+
+    .editorial-section,
+    .impact-section,
+    .timeline-section,
+    .comparison-section {
+        padding: 100px 6vw;
+    }
+
+    .section-label {
+        margin-bottom: 60px;
+    }
+
+
+    /* CITY */
+
+    .large-heading h2 {
+        font-size: clamp(55px, 17vw, 90px);
+    }
+
+    .intro-text {
+        font-size: 21px;
+    }
+
+    .city-stat {
+        margin-top: 80px;
+    }
+
+
+    /* TREE */
+
+    .tree-image {
+        min-height: 45vh;
+    }
+
+    .tree-content {
+        padding: 80px 6vw;
+    }
+
+    .tree-content h2 {
+        font-size: clamp(60px, 17vw, 100px);
+    }
+
+    .tree-facts {
+        margin-top: 55px;
+    }
+
+
+    /* COST */
+
+    .cost-heading {
+        margin-bottom: 80px;
+    }
+
+    .cost-heading h2 {
+        font-size: clamp(65px, 18vw, 100px);
+    }
+
+
+    /* COMPARISON */
+
+    .comparison-header h2 {
+        font-size: clamp(45px, 13vw, 75px);
+    }
+
+    .comparison {
+        height: 45vh;
+    }
+
+
+    /* IMPACT */
+
+    .impact-intro h2 {
+        font-size: clamp(60px, 17vw, 100px);
+    }
+
+    .impact-card strong {
+        font-size: 40px;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline-header h2 {
+        font-size: clamp(60px, 17vw, 100px);
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item h3,
+    .timeline-item p {
+        grid-column: 1;
+    }
+
+
+    /* FINAL */
+
+    .final-section {
+        min-height: 90vh;
+
+        padding: 70px 6vw;
+    }
+
+    .final-section h2 {
+        font-size: clamp(55px, 16vw, 95px);
+    }
+
+    .final-number {
+        margin-bottom: 60px;
+    }
+
+
+    /* FOOTER */
+
+    .site-footer {
+        padding: 35px 6vw;
+    }
+}
+/* ================= EXTRA DESKTOP SAFETY ================= */
+@media (max-width: 1150px) {
+    .main-nav { display: none; }
+    .menu-button { display: block; }
+    .hero-content { max-width: 680px; }
+}
+
+html, body, main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
